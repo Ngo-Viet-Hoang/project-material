@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Circle } from "@mui/icons-material";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import Feed from "./components/Feed";
+import Navbar from "./components/Navbar";
+import Plan from "./components/Plan";
+import Title from "./components/Title";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ bgColor: "white" }}>
+      <Navbar />
+    {/* <Title/> */}
+      <Container>
+        <Grid container>
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+        </Grid>
+        <Box sx={{display: "flex"}}>
+        <Circle /><Typography fontWeight="300"> CHOOSE YOUR PLAN </Typography><Circle/>
+        </Box>
+        <Typography variant="h4" component="h1">Flexible Pricing Plans</Typography>
+       
+        <Grid container>
+          <Plan/>
+          <Plan/>
+          <Plan/>
+        </Grid>
+      </Container>
+    </Box>
   );
 }
 
