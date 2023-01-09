@@ -9,7 +9,7 @@ function App() {
   return (
     <Box sx={{ bgColor: "white" }}>
       <Navbar />
-    {/* <Title/> */}
+    <Title/>
       <Container>
         <Grid container>
           <Feed />

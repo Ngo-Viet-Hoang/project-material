@@ -31,7 +31,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 const Title = () => {
   return (
-    // <Box sx={{ width: "100%", height: "300px", bgcolor: "gray" }}>
+    <Box sx={{ width: "100%", height: "300px", bgcolor: "white", paddingTop:"40px" }}>
     <Container>
       <Box sx={{ bgColor: "white" }}>
         <StyledStack
@@ -52,7 +52,7 @@ const Title = () => {
         </StyledStack>
       </Box>
     </Container>
-    //   </Box>
+       </Box>
   );
 };
 
