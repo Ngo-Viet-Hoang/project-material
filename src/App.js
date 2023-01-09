@@ -9,7 +9,7 @@ function App() {
   return (
     <Box sx={{ bgColor: "white" }}>
       <Navbar />
-    <Title/>
+      {/* <Title/> */} 
       <Container>
         <Grid container>
           <Feed />
@@ -19,15 +19,19 @@ function App() {
           <Feed />
           <Feed />
         </Grid>
-        <Box sx={{display: "flex"}}>
-        <Circle /><Typography fontWeight="300"> CHOOSE YOUR PLAN </Typography><Circle/>
+        <Box sx={{ display: "flex" }}>
+          <Circle />
+          <Typography fontWeight="300"> CHOOSE YOUR PLAN </Typography>
+          <Circle />
         </Box>
-        <Typography variant="h4" component="h1">Flexible Pricing Plans</Typography>
-       
+        <Typography variant="h4" component="h1">
+          Flexible Pricing Plans
+        </Typography>
+
         <Grid container>
-          <Plan/>
-          <Plan/>
-          <Plan/>
+          <Plan />
+          <Plan />
+          <Plan />
         </Grid>
       </Container>
     </Box>
