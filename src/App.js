@@ -1,5 +1,6 @@
 import { Circle } from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import AboutUs from "./components/AboutUs";
 import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Plan from "./components/Plan";
@@ -9,16 +10,10 @@ function App() {
   return (
     <Box sx={{ bgColor: "white" }}>
       <Navbar />
-      {/* <Title/> */} 
-      <Container>
-        <Grid container>
+      <Title />
+      {/* <Container> */}
+        {/* <AboutUs/>
           <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-        </Grid>
         <Box sx={{ display: "flex" }}>
           <Circle />
           <Typography fontWeight="300"> CHOOSE YOUR PLAN </Typography>
@@ -27,13 +22,8 @@ function App() {
         <Typography variant="h4" component="h1">
           Flexible Pricing Plans
         </Typography>
-
-        <Grid container>
-          <Plan />
-          <Plan />
-          <Plan />
-        </Grid>
-      </Container>
+          <Plan />   */}
+      {/* </Container> */}
     </Box>
   );
 }

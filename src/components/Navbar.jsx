@@ -1,4 +1,5 @@
 import {
+  Close,
   Dehaze,
   KeyboardArrowDown,
   Search,
@@ -15,7 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 
 const StyledAppbar = styled(AppBar)({
   display: "flex",
@@ -57,6 +58,7 @@ const BoxIcon = styled(Box)({
   justifyContent: "center",
 });
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <StyledAppbar position="static">
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -133,28 +135,38 @@ const Navbar = () => {
             <Search />
           </BoxIcon>
           <BoxIcon component="button">
-            <Dehaze />
+            <Dehaze onClick={(e) => setOpen(true)} />
+            <Box>
+              <Menu
+                id="demo-positioned-menu"
+                aria-labelledby="demo-positioned-button"
+                open={open}
+                onClose={(e) => setOpen(false)}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                transformOrigin={{
+                  vertical: "bottom",
+                  horizontal: "right",
+                }}
+              >
+                <Box>
+                  <Button sx={{ paddingLeft: "80px" }}>
+                    <Close onClick={(e) => setOpen(false)} />
+                  </Button>
+                </Box>
+                <MenuItem>Home</MenuItem>
+                <MenuItem>Pages</MenuItem>
+                <MenuItem>Services</MenuItem>
+                <MenuItem>Portfolio</MenuItem>
+                <MenuItem>Blog</MenuItem>
+                <MenuItem>Contact</MenuItem>
+              </Menu>
+            </Box>
           </BoxIcon>
         </Icons>
       </Toolbar>
-      <Menu
-        id="demo-positioned-menu"
-        aria-labelledby="demo-positioned-button"
-        // open={open}
-        // onClose={(e) => setOpen(false)}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-      >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My account</MenuItem>
-        <MenuItem>Logout</MenuItem>
-      </Menu>
     </StyledAppbar>
   );
 };
