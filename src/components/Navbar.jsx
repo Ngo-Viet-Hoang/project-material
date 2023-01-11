@@ -147,7 +147,7 @@ const Navbar = () => {
                   horizontal: "right",
                 }}
                 transformOrigin={{
-                  vertical: "bottom",
+                  vertical: "top",
                   horizontal: "right",
                 }}
               >

@@ -1,9 +1,10 @@
-import { Circle } from "@mui/icons-material";
+import { Circle, FiberManualRecord } from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import AboutUs from "./components/AboutUs";
 import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Plan from "./components/Plan";
+import PlanTitle from "./components/PlanTitle";
 import Title from "./components/Title";
 
 function App() {
@@ -12,17 +13,10 @@ function App() {
       <Navbar />
       <Title />
       {/* <Container> */}
-        {/* <AboutUs/>
-          <Feed />
-        <Box sx={{ display: "flex" }}>
-          <Circle />
-          <Typography fontWeight="300"> CHOOSE YOUR PLAN </Typography>
-          <Circle />
-        </Box>
-        <Typography variant="h4" component="h1">
-          Flexible Pricing Plans
-        </Typography>
-          <Plan />   */}
+      <AboutUs />
+      <Feed />
+     <PlanTitle/>
+      {/* <Plan /> */}
       {/* </Container> */}
     </Box>
   );

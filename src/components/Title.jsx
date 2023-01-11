@@ -39,7 +39,6 @@ const StyledStackIphone = styled(Stack)(({ theme }) => ({
   },
   [theme.breakpoints.down("xs")]: {
     display: "flex",
-    paddingLeft: "10px",
   },
 }));
 
@@ -52,7 +51,7 @@ const Title = () => {
         paddingTop: "150px",
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="sm">
         <Box sx={{ textAlign: "center", width: "100%" }}>
           <Typography variant="h6">WHAT'S YOUR SEO SCORE</Typography>
           <Box>
@@ -64,7 +63,7 @@ const Title = () => {
             </Typography>
           </Box>
         </Box>
-        <Box sx={{ display: "flex", paddingTop: "40px" }}>
+        <Box sx={{ display: "flex", paddingTop: "50px", paddingLeft:"20px"}}>
           <StyledStack
             direction="row"
             divider={<Divider orientation="vertical" flexItem />}
@@ -92,7 +91,7 @@ const Title = () => {
             <Box
               sx={{
                 border: "#ccc solid",
-                width: "270px",
+                width: "100%",
                 borderRadius: "100px",
               }}
             >
@@ -104,7 +103,7 @@ const Title = () => {
             <Box
               sx={{
                 border: "#ccc solid",
-                width: "270px",
+                width: "100%",
                 borderRadius: "100px",
               }}
             >
