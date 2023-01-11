@@ -15,7 +15,7 @@ function App() {
       {/* <Container> */}
       <AboutUs />
       <Feed />
-     <PlanTitle/>
+      <PlanTitle />
       {/* <Plan /> */}
       {/* </Container> */}
     </Box>

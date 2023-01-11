@@ -29,7 +29,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 
 const Feed = () => {
   return (
-    <Box>
+    <Box sx={{padding:"40px"}}>
       <StyledContainer maxWidth="md">
         <Grid container sx={{ textAlign: "center" }}>
           <Grid item xs={4} sx={{ justifyContent: "center" }}>

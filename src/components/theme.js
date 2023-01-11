@@ -8,5 +8,8 @@ export const theme = createTheme({
     otherColor: {
       main: "#FE4C1C",
     },
+    blueColor:{
+      main:"#00C3FF",
+    }
   },
 });
